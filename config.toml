@@ -1,0 +1,75 @@
+# The URL the site will be built for
+base_url = "https://fpqyv-5iaaa-aaaah-qc3ha-cai.ic0.app"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+title = "manue1'blog"
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+theme = "archie-zola"
+
+taxonomies = [
+    {name = "tags"}
+]
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+# Put all your custom variables here
+# control dark mode: auto | dark | toggle
+mode = "toggle"
+
+# # subtitle will show under the title in index page
+# subtitle = "A zola theme forked from [archie](https://github.com/athul/archie)"
+
+# if set true, will use external CDN resource to load font and js file
+useCDN = false
+
+favicon = "/icon/favicon.png"
+
+# show in the footer
+copyright = "manue1"
+
+# config your Google Analysis ID
+ga = "XXXX-XXXXX"
+
+
+# config menu path
+[[extra.menu]]
+name = "Home"
+url = "/index.html"
+weight = 1
+
+[[extra.menu]]
+name = "All posts"
+url = "/posts/index.html"
+weight = 2
+
+[[extra.menu]]
+name = "About"
+url = "/about/index.html"
+weight = 3
+
+[[extra.menu]]
+name = "Tags"
+url = "/tags/index.html"
+weight = 4
+
+# config social icon info in the footer
+[[extra.social]]
+icon = "github"
+name = "GitHub"
+url = "https://github.com/nanue1"
+
+[[extra.social]]
+icon = "twitter"
+name = "Twitter"
+url = "https://twitter.com/zimuchunzi0508"
+
+
