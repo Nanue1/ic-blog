@@ -9,7 +9,7 @@ title = "manue1'blog"
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
-# theme = "archie-zola"
+theme = "archie-zola"
 
 taxonomies = [
     {name = "tags"}
@@ -37,28 +37,28 @@ favicon = "/icon/favicon.png"
 copyright = "manue1"
 
 # config your Google Analysis ID
-ga = "G-6EYH6VQ7B"
+ga = "G-6EYH6VQ7BE"
 
 
 # config menu path
 [[extra.menu]]
 name = "Home"
-url = "/"
+url = "/index.html"
 weight = 1
 
 [[extra.menu]]
 name = "All posts"
-url = "/posts/"
+url = "/posts/index.html"
 weight = 2
 
 [[extra.menu]]
 name = "About"
-url = "/about/"
+url = "/about/index.html"
 weight = 3
 
 [[extra.menu]]
 name = "Tags"
-url = "/tags/"
+url = "/tags/index.html"
 weight = 4
 
 # config social icon info in the footer
