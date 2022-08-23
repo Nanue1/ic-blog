@@ -4,9 +4,17 @@
     </div>
 
     <nav>
-        {% for menu in config.extra.menu %}
+        {% for menu in config.extra.translations[lang][0].menus %}
             <a href={{ menu.url }}>{{ menu.name }}</a>
         {% endfor %}
+
+        {% if config.extra.translations.languages %}
+            |
+
+            {% for language in config.extra.translations.languages %}
+                <a href={{ language.url }}>{{ language.name }}</a>
+            {% endfor %}
+        {% endif %}
 
         {% if config.extra.mode == "toggle" %}
             | <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>

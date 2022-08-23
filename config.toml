@@ -15,6 +15,8 @@ taxonomies = [
     {name = "tags"}
 ]
 
+default_language = "en"
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -39,27 +41,20 @@ copyright = "manue1"
 # config your Google Analysis ID
 ga = "G-6EYH6VQ7B"
 
-
-# config menu path
-[[extra.menu]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[extra.menu]]
-name = "All posts"
-url = "/posts/"
-weight = 2
-
-[[extra.menu]]
-name = "About"
-url = "/about/"
-weight = 3
-
-[[extra.menu]]
-name = "Tags"
-url = "/tags/"
-weight = 4
+[[extra.translations.en]]
+show_more = "Read more ⟶"
+previous_page = "← Previous"
+next_page = "Next →"
+posted_on = "on "
+posted_by = "Published by"
+read_time = "minute read"
+all_tags = "All tags"
+menus = [
+    { name = "Home", url = "/", weight = 4 },
+    { name = "All posts", url = "/posts", weight = 4 },
+    { name = "About", url = "/about", weight = 4 },
+    { name = "Tags", url = "/tags", weight = 4 },
+]
 
 # config social icon info in the footer
 [[extra.social]]

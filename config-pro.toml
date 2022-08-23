@@ -15,6 +15,8 @@ taxonomies = [
     {name = "tags"}
 ]
 
+default_language = "en"
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -40,26 +42,21 @@ copyright = "manue1"
 ga = "G-6EYH6VQ7BE"
 
 
-# config menu path
-[[extra.menu]]
-name = "Home"
-url = "/index.html"
-weight = 1
-
-[[extra.menu]]
-name = "All posts"
-url = "/posts/index.html"
-weight = 2
-
-[[extra.menu]]
-name = "About"
-url = "/about/index.html"
-weight = 3
-
-[[extra.menu]]
-name = "Tags"
-url = "/tags/index.html"
-weight = 4
+# config multi-language menu and other text
+[[extra.translations.en]]
+show_more = "Read more ⟶"
+previous_page = "← Previous"
+next_page = "Next →"
+posted_on = "on "
+posted_by = "Published by"
+read_time = "minute read"
+all_tags = "All tags"
+menus = [
+    { name = "Home", url = "/index.html", weight = 4},
+    { name = "All posts", url = "/posts/index.html", weight = 4 },
+    { name = "About", url = "/about/index.html", weight = 4 },
+    { name = "Tags", url = "/tags/index.html", weight = 4 },
+]
 
 # config social icon info in the footer
 [[extra.social]]
