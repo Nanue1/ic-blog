@@ -1,5 +1,5 @@
 +++
-title = "如何在 IC 上构建 restful api 接口 ？"
+title = "如何在 IC 上构建 http 接口 ？"
 date = "2021-11-12"
 description = "当前 Internet computer（ICP） 上的 canister 无法对外发送 Http 请求，但可以接收 HTTP 请求进行响应处理。"
 
