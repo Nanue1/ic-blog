@@ -71,7 +71,7 @@ Webhook 端处理完消息后，返回的消息结构为 telegram 当前支持�
  ### 2. candid 接口定义
  外界网络环境想要与运行在 ICP 网络上的 WebHook bot 通信，需要通过 IDL 语言定义交互方式，Dfinity 团队提供了 [candid](https://github.com/dfinity/candid), 来帮我们实现接口描述和交换数据的定义。
  比如 Webhook Bot Canister 的接口描述可以像这样：
- ```json
+ ```
  type request = record {
   method : text;
   headers : vec record {blob; blob};
